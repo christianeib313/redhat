@@ -1,0 +1,3 @@
+https://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@github.com/christianeib313/rhcsa-notes.git
+
+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

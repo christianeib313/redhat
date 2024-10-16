@@ -1,0 +1,168 @@
+{
+  "main": {
+    "id": "124089992dc322f9",
+    "type": "split",
+    "children": [
+      {
+        "id": "020a21daafcc7ce2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "95d92b9a67483681",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "rhcsa/test.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d5c8e3a12269f6d0",
+    "type": "split",
+    "children": [
+      {
+        "id": "8e94620af6a362ba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f9d2f47578badbfc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "06926575cd455b89",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "04a37868cf76b760",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0deb74fa74fbe698",
+    "type": "split",
+    "children": [
+      {
+        "id": "14df2230e1f0e740",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "63bf900f7cbb5590",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "rhcsa/test.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "34139ce91ce185f5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "rhcsa/test.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7593a4069fab256c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "a780b506aa9fc4bf",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "rhcsa/test.md"
+              }
+            }
+          },
+          {
+            "id": "9cd7fa974efae078",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "95d92b9a67483681",
+  "lastOpenFiles": [
+    "logging.md",
+    "rhcsa/test.md",
+    "rhcsa",
+    "rhcsa-notes-1/test.md",
+    "rhcsa-notes-1",
+    "rhcsa-notes-1",
+    "Welcome.md"
+  ]
+}
