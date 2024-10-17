@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "rhcsa/scheduling-tasks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "scheduling-tasks"
             }
           }
         ],
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "rhcsa/scheduling-tasks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for README"
+              "title": "Backlinks for scheduling-tasks"
             }
           },
           {
@@ -127,12 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "rhcsa/scheduling-tasks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from README"
+              "title": "Outgoing links from scheduling-tasks"
             }
           },
           {
@@ -154,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "rhcsa/scheduling-tasks.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of README"
+              "title": "Outline of scheduling-tasks"
             }
           }
         ]
@@ -179,11 +179,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c67e7e3424017072",
+  "active": "98aacddc6c582478",
   "lastOpenFiles": [
+    "rhcsa/README.md",
     "rhcsa/scheduling-tasks.md",
-    "README.md",
     "rhcsa/Untitled.md",
+    "rhcsa/README.md",
+    "rhcsa/rhcsa/README.md",
     "templates/rhcsa-gpt-template-1.md",
     "assets/crontab-job-touch-tmp.png",
     "assets/Pasted image 20241016135748.png",
