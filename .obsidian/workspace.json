@@ -1,49 +1,68 @@
 {
   "main": {
-    "id": "124089992dc322f9",
+    "id": "e734b8a1e816acbe",
     "type": "split",
     "children": [
       {
-        "id": "020a21daafcc7ce2",
+        "id": "8254ee47da612d00",
         "type": "tabs",
         "children": [
           {
-            "id": "95d92b9a67483681",
+            "id": "244b9f9f34fef705",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "rhcsa/test.md",
+                "file": "rhcsa/scheduling-tasks.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "scheduling-tasks"
+            }
+          },
+          {
+            "id": "c67e7e3424017072",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "d5c8e3a12269f6d0",
+    "id": "b961e81de7f19c50",
     "type": "split",
     "children": [
       {
-        "id": "8e94620af6a362ba",
+        "id": "11c719e9728c9117",
         "type": "tabs",
         "children": [
           {
-            "id": "f9d2f47578badbfc",
+            "id": "98aacddc6c582478",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
-            "id": "06926575cd455b89",
+            "id": "92c1ad8032c00a2a",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -54,15 +73,19 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
-            "id": "04a37868cf76b760",
+            "id": "70f3378421432df2",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -72,20 +95,20 @@
     "width": 300
   },
   "right": {
-    "id": "0deb74fa74fbe698",
+    "id": "a10f79d71e3e8c3d",
     "type": "split",
     "children": [
       {
-        "id": "14df2230e1f0e740",
+        "id": "8210e7330d629f16",
         "type": "tabs",
         "children": [
           {
-            "id": "63bf900f7cbb5590",
+            "id": "868a10f7a201edbb",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "rhcsa/test.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,76 +116,81 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for README"
             }
           },
           {
-            "id": "34139ce91ce185f5",
+            "id": "ca83abe98cb70d03",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "rhcsa/test.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from README"
             }
           },
           {
-            "id": "7593a4069fab256c",
+            "id": "427ba56d8bd373d8",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
-            "id": "a780b506aa9fc4bf",
+            "id": "2ca56a5e6d75b766",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "rhcsa/test.md"
-              }
-            }
-          },
-          {
-            "id": "9cd7fa974efae078",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {}
+                "file": "README.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of README"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "95d92b9a67483681",
+  "active": "c67e7e3424017072",
   "lastOpenFiles": [
-    "logging.md",
-    "rhcsa/test.md",
-    "rhcsa",
-    "rhcsa-notes-1/test.md",
-    "rhcsa-notes-1",
-    "rhcsa-notes-1",
-    "Welcome.md"
+    "rhcsa/scheduling-tasks.md",
+    "README.md",
+    "rhcsa/Untitled.md",
+    "templates/rhcsa-gpt-template-1.md",
+    "assets/crontab-job-touch-tmp.png",
+    "assets/Pasted image 20241016135748.png",
+    "rhcsa/task-scheduling.md",
+    "assets/crontab-syntax.png",
+    "assets",
+    "templates",
+    "rhcsa"
   ]
 }

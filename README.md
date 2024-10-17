@@ -1,1 +1,1 @@
-# rhcsa-notes
+# this is a test of git-sync
