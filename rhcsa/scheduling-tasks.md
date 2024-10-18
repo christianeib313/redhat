@@ -26,7 +26,7 @@ Logrotate example.
 
 ### Crontab Syntax
 --- 
-![[assets/crontab-syntax.png]]
+![[crontab-syntax.png]]
 
 ## Lab 
 ---
