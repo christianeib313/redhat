@@ -1,4 +1,13 @@
-./
+# Ignore everything
+*
 
-!/*.md
-!/documents/obsidian-git-sync/redhat/assets
+# Allow .md files inside rhcsa directory
+!rhcsa/**/*.md
+
+# Allow the rhcsa directory itself so .md files inside it can be tracked
+!rhcsa/
+
+# Allow the assets folder and all of its contents
+!assets/
+!assets/**
+
