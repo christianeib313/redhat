@@ -51,6 +51,4 @@ Logrotate example.
 	- ctrl-D to confirm it 
 	- use `atq` to check status of job
 	
-	- ! MAKE SURE YOU DO THIS AS ROOT
-- 
-test
+	- ! MAKE SURE YOU DO THIS AS ROOT 
