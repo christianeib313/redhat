@@ -28,6 +28,7 @@
 	- you could use this to have a script write any error messages to rsyslog
 - `journalctl -f`: shows last lines the of messages where new log lines are automatically added
 - `journalctl --no-pager`: shows contents of the journal without using a pager
+- `logger`: used to write logs manually to `rsyslog`
 ## SYSTEMD-JOURNALD
 ---
 - **Overview:** stores log messages into journal, a binary file that is **temporarily** stored in the file `/run/log/journal` 
@@ -55,11 +56,48 @@
 4. `systemctl restart systemd-journal-flush`
 5. systemd journal is now persistent
 # RSYSLOG
+---
 - Two configuration files
 	1. `/etc/rsyslog.conf`: Central location where rsyslogd is configured.
 	2. `/etc/rsyslog.d`: drop in files
-- 
+- Each logger line contains three items:
+	1. **facility**: the specific facility that the log is created for
+	2. **severity/priority**: the severity/priority from which the message should be logged
+	3. **destination**: the file or destination the log should be written to
+- Logs are locacted in /var/log
+	- use `ls -lrt` to see most recent files listed last
+		- `-l`: list in long format
+		- `-r`: reverse the order of listing (oldest first)
+		- `-t`: sort by time, with most recently modified first
+# logrotate
+---
+- **rotating log files**:
+	- system by default will rotate logs every 4 weeks
+	- if `/var/log/messages` is rotated on June 8, 2023, then the rotated filename will be `/var/log/messages-20230608`
+- `/etc/logrotate.conf`: default settings for log rotation
+- `/etc/logrotate.d`: use if specific files need specific settings this will overwrite default settings in the `/etc/logrotate.conf` file
+# LAB
+---
+### Objective:
+1. Make sure the systemd journal is logged persistently
+2. create an entry in rsyslog that writes all messages with a severity of error or higher to /var/log/error
+3. Ensure that /var/log/error is rotated on a monthly basis, and the last 12 logs are kept before they are rotated out
+#### Steps:
+1. **First objective:
+	- create a directoy /var/log/journal
+	-  make sure `storage=auto` in `/etc/systemd/journald.conf`
+2. **second objective:
+	- add `*.err             /var/log/error` in `/etc/rsyslog.conf`
+3. **third objective:
+	- `vim /etc/logrotate.d/error`
+		- reference `/etc/rsyslog.conf` for what needs to be added to config
+#### TIP
+---
+- You can test to make sure error messages are going to the correct log by using `logger`
+- `logger -p err hello world` will send a log with the priority of error 
+- `cat /var/log/error` you will see the hello world log here if it is successful
 
 
- 
+
+
 
