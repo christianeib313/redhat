@@ -1,10 +1,8 @@
 ---
 
 ---
-# Scheduling Tasks
+# OVERVIEW
 --- 
-
-
 For the exam focus on `systemd` timers
 
 `systemctl list-units -t timer`
@@ -16,7 +14,6 @@ Logrotate example.
  - list all the files on logrotate
 ## Commands
 ---
-
 `systemctl status <service you want status of>`
 `systemctl list-units -t timer`
 `systemctl list-unit-files <file you want to list>`
