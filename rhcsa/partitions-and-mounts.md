@@ -84,5 +84,11 @@ use `m` to see a list of useful commands in fdisk
 | `blkid`                | `grep sda5`      | `awk '{ print $2 }'`                | `>>`       | `/etc/fstab`                     |
 | ---------------------- | ---------------- | ----------------------------------- | ---------- | -------------------------------- |
 | gets block device info | filters for sda5 | extracts uuid from the grep command | append to: | appends the UUID to `/etc/fstab` |
+###### Systemd Mounts
+- Lines in `/etc/fstab` are converted to systemd mounts
+	- you can check in `/run/sytstemd/generator` for automatically generated files
+- Just focus on using fstab for pesistent mounting
 
-	
+###### Mananing Swap
+- Swap is used to act as an overflow is your memory hits capacity. 
+- 
