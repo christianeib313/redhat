@@ -2,8 +2,6 @@ ___
 # DISK LAYOUT
 ---
 - `lsblk` shows disk layout
-## COMMON BLOCK DEVICES
----
 - `/dev/sdx` is commong for SCSI and SATA disks 
 - `/dev/vdx` is used in KVM virtual machines
 - `/dev/nvmexny` is used for NVME devices
@@ -21,9 +19,8 @@ ___
 - 128 partitions max
 ## CREATE PARTITIONS WITH `FDISK`
 ---
-`fdisk /dev/sda` to use the fdisk utility on the device
-use `m` to see a list of useful commands in fdisk
-`n` to add a new partition
+- `fdisk /dev/device-to-partition` to use the fdisk utility on the device
+- utilize the help function in fdisk
 # MOUNTING FILESYSTEMS
 ---
 #### Filesystem Types:
@@ -52,27 +49,27 @@ use `m` to see a list of useful commands in fdisk
 - ex.
 	- `mount /dev/sda1 /mnt`
 		- sets the mountpoint for sda1 to /mnt directory
-- 
-**TIP**: if you see an error "wrong fs type" this is because you are trying to mount before creating a filesystem
-
+---
+**TIP**: *if you see an error "wrong fs type" this is because you are trying to mount before creating a filesystem* 
 ###### Persistently mount partitions:
 - `/etc/fstab` is the main configuration file to persistently mount partitions
 
-| device you want to mount                | mount point           | filesystem | filesystem defaults |
-| --------------------------------------- | --------------------- | ---------- | ------------------- |
-| `/dev/sdb1` can also be a UUID or Label | `/YourMountDirectory` | ext4       | 0 0                 |
+| device you want to mount                | mount point                  | filesystem | filesystem defaults |
+| --------------------------------------- | ---------------------------- | ---------- | ------------------- |
+| `/dev/sdb1` can also be a UUID or Label | `/YourMountDirectory`        | ext4       | 0 0                 |
+| /dev/swapdevice                         | `none` swap does not need it | `swap`     | 0 0                 |
 - this is the format you'll use when you vim into `/etc/fstab`
 ##### Troubleshooting fstab:
 - if you make an error in the fstab and don't know what to do
-- reboot - jump into grub bootloader menu by holding shift
-- remove `rhgb` and `quiet` at the end of the line that starts with linux
-	- you will now see what is happening and see any errors
-- once the root shell is available you'll be able to vim into `/etc/fstab` and make any changes that you need
-- ctrl-D or type exit to continue boot process
+	1. reboot - jump into grub bootloader menu by holding shift
+	2. remove `rhgb` and `quiet` at the end of the line that starts with linux
+		- you will now see what is happening and see any errors
+	3. vim `/etc/fstab` and make any changes that you need
+		-  ctrl-D or type exit to continue boot process
 ##### UUID and Labels:
 - There are two options for setting persistent naming on block devices
 	1. **UUID**: automatically generated for each new device that contains a filesystem or anything similar
-	2. **Label**: while creating the filesystem use the option `-L` to set a name that can be used for mounting the system
+	2. **Label**: custom identifier you can make for a partition. It is not recommended
 - **Managing Persistent Naming Attributes**:
 	- `blkid`: shows all devices with their naming attributes
 	- `tune2fs -L`: is used to set a Label on an Ext filesystem
@@ -87,8 +84,23 @@ use `m` to see a list of useful commands in fdisk
 ###### Systemd Mounts
 - Lines in `/etc/fstab` are converted to systemd mounts
 	- you can check in `/run/sytstemd/generator` for automatically generated files
-- Just focus on using fstab for pesistent mounting
+- ***Just focus on using fstab for pesistent mounting***
 
 ###### Mananing Swap
-- Swap is used to act as an overflow is your memory hits capacity. 
-- 
+- Swap is used to act as an overflow if your memory hits capacity. 
+- if you create a swap set the partition type to linux-swap in `fdisk`
+- use `mkswap /dev/swapdevice`to create the swap FS
+- `swapon -a` to activate all swaps
+- use `free -m` to check swap before/after activating
+###### Check List:
+1. Create partitions using fdisk
+2. create filesystems for those partitions
+3. mount the filesystems
+4. add UUID of the partitions to fstab to make it persistent
+5. `findmnt --verify` to check for errors
+6. **RELOAD** and verify it's persistent
+
+| device you want to mount                | mount point      | filesystem | filesystem defaults |
+| --------------------------------------- | ---------------- | ---------- | ------------------- |
+| /dev/sda(what ever your swap device is) | `none` or `swap` | `swap`     | 0 0                 |
+|                                         |                  |            |                     |
